@@ -11,25 +11,19 @@
  */
 
 function getLongestString(arr) {
-    if (!Array.isArray(arr) || arr.length === 0) {
+    if(!Array.isArray(arr) || arr.length === 0){
         return false;
     }
-
     let longestString = arr[0];
-
-    for (let i = 0; i < arr.length; i++) {
-        if (typeof arr[i] ==='string' && arr[i].length > longestString.length) {
+    
+    for(let i = 0; i < arr.length; i++){
+        if(typeof arr[i] ==="string" && arr[i].length > longestString.length){
             longestString = arr[i];
         }
     }
-
     return longestString;
 }
 getLongestString();
-
-
-
-
 
 // Stop ! Tests, on ne touche pas :P
 check.exo8(getLongestString);
