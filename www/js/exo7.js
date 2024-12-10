@@ -11,12 +11,12 @@
  */
 
 function getExtension(str) {
-
-
+    if (typeof str!=='string' || str.indexOf('.') === -1) {
+        return false;
+    }
+    return str.split('.').pop();
 }
-
-
-
+getExtension();
 
 // Stop ! Tests, on ne touche pas :P
 check.exo7(getExtension);

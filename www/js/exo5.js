@@ -6,17 +6,8 @@
 //sans commentaires...
 
 function doubleInt(int) {
-
-
+ return int*2;
 }
-
-
-
-
-
-
-
-
 // Stop ! Tests, on ne touche pas :P
 
 check.exo5(doubleInt);

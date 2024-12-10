@@ -8,3 +8,17 @@
  * https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date
  */
 
+function dateTime() {
+    let time = new Date();
+    let hours = time.getHours();
+    let minutes = time.getMinutes();
+    if (minutes<10){minutes = "0" + minutes;}
+    let secondes = time.getSeconds();
+    if (secondes<10){secondes = "0" + secondes;}
+    let affiche = document.getElementById("container");
+
+    affiche.textContent = "Heure actuelle:\n"  + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;
+}
+
+dateTime();
+setInterval(dateTime, 1000);

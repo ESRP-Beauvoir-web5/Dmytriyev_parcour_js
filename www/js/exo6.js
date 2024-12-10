@@ -6,16 +6,12 @@
 //sans commentaires...
 
 function isEven(int) {
-
-
+    if (int % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
-
-
-
-
-
-
-
-
+isEven()
 // Stop ! Tests, on ne touche pas :P
 check.exo6(isEven);
