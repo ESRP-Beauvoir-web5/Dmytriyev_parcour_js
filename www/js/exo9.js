@@ -10,15 +10,21 @@
  * - [1, [2, 3, [4, 5], 6], 7, [8, 9]] : 45
  */
 
-
 function sum(arr) {
-
-
+    if(!Array.isArray(arr)){
+        return 0;
+    }
+    let total = 0;
+    
+    for(let i = 0; i < arr.length; i++){
+        if(Array.isArray(arr[i])){
+            total += sum(arr[i]);
+        } else if(typeof arr[i] === "number"){
+            total += arr[i];
+        }
+    }
+    return total;
 }
-
-
-
-
-
+sum();
 // Stop ! Tests, on ne touche pas :P
 check.exo9(sum);
