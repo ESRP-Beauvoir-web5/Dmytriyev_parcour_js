@@ -25,6 +25,5 @@ function sum(arr) {
     }
     return total;
 }
-sum();
 // Stop ! Tests, on ne touche pas :P
 check.exo9(sum);
